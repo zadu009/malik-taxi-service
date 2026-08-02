@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online-Anfrage – Taxi Malik</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#hero" class="brand">Malik<span>Taxi</span></a>
+    <nav class="main-nav">
+      <a href="index.html#services">Leistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="anfrage.html">Anfrage</a>
+    </nav>
+    <a href="tel:+4917655667788" class="btn btn-small btn-ghost header-call">
+      <span class="dot"></span> 0176 55 66 77 88
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#hero">Start</a>
+    <a href="index.html#services">Leistungen</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="anfrage.html">Online-Anfrage</a>
+    <a href="tel:+4917655667788" class="btn btn-primary">0176 55 66 77 88</a>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Taxi Online-Anfrage</h1>
+  <p class="page-lead">Alle Felder sind Pflichtfelder. Wir melden uns umgehend zur Bestätigung Ihrer Fahrt.</p>
+
+  <div class="notice">
+    Hinweis: Dieses Formular ist aktuell noch nicht an ein Buchungssystem angebunden. Für verbindliche Vorbestellungen
+    rufen Sie uns bitte direkt an: <a class="inline-link" href="tel:+4917655667788">0176 55 66 77 88</a>.
+  </div>
+
+  <form id="requestForm" class="form-grid" novalidate>
+    <div class="form-field full">
+      <label for="from">Startadresse</label>
+      <input type="text" id="from" name="from" required>
+    </div>
+    <div class="form-field full">
+      <label for="to">Zieladresse</label>
+      <input type="text" id="to" name="to" required>
+    </div>
+    <div class="form-field">
+      <label for="date">Datum</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="form-field">
+      <label for="time">Uhrzeit</label>
+      <input type="time" id="time" name="time" required>
+    </div>
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label for="phone">Telefonnummer</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-field full">
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="full form-check">
+      <input type="checkbox" id="privacy" name="privacy" required>
+      <label for="privacy">
+        Ich habe die <a class="inline-link" href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der
+        Verarbeitung meiner Daten zur Bearbeitung dieser Anfrage einverstanden.
+      </label>
+    </div>
+    <div class="full form-actions">
+      <button type="submit" class="btn btn-primary">Anfrage senden</button>
+    </div>
+    <p class="full" id="formStatus" role="status" style="display:none;"></p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand">Malik<span>Taxi</span></span>
+      <p>Ihr zuverlässiger Taxiservice in Rüsselsheim und im Rhein-Main-Gebiet – 24/7, 365&nbsp;Tage im Jahr.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <a href="tel:+4917655667788">0176 55 66 77 88</a>
+      <a href="mailto:info@malik-taxi-service.de">info@malik-taxi-service.de</a>
+      <span>Musterstraße 22, 65428 Rüsselsheim am Main</span>
+    </div>
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <a href="index.html#services">Leistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="anfrage.html">Online-Anfrage</a>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Taxi Malik. Alle Rechte vorbehalten.</span>
+  </div>
+</footer>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById("requestForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const status = document.getElementById("formStatus");
+    status.style.display = "block";
+    status.textContent = "Diese Demo-Webseite hat noch keine Anbindung an ein Buchungssystem. Bitte rufen Sie uns für eine verbindliche Vorbestellung an: 0176 55 66 77 88.";
+  });
+</script>
+</body>
+</html>

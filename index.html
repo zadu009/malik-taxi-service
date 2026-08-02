@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi Malik – Ihr Taxiservice in Rüsselsheim</title>
+<meta name="description" content="Taxi Malik – zuverlässiger Taxiservice in Rüsselsheim: Flughafentransfer, Krankenfahrten, Kurierfahrten und Personentransfers. 24/7 erreichbar.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div class="media-pin" id="mediaPin" aria-hidden="true">
+  <div class="media-fallback"></div>
+
+  <video id="taxiVideoSource" src="Eigene_Bilder/video-transparent-bg.mp4" muted playsinline preload="auto" style="position:absolute; left:-9999px; width:1px; height:1px;"></video>
+  <canvas class="taxi-illustration" id="taxiIllustration" aria-hidden="true"></canvas>
+
+  <div class="media-scrim"></div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#hero" class="brand">Malik<span>Taxi</span></a>
+    <nav class="main-nav">
+      <a href="#services">Leistungen</a>
+      <a href="#contact">Kontakt</a>
+      <a href="anfrage.html">Anfrage</a>
+    </nav>
+    <a href="tel:+4917655667788" class="btn btn-small btn-ghost header-call">
+      <span class="dot"></span> 0176 55 66 77 88
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="intro" id="hero">
+    <div class="intro-content">
+      <p class="eyebrow">Taxi Malik · Rüsselsheim &amp; Rhein-Main</p>
+      <h1>Ihr Taxi.<br>Jederzeit. Überall.</h1>
+      <p class="lead">Zuverlässig, komfortabel und pünktlich – rund um die Uhr, 365&nbsp;Tage im Jahr, im gesamten Rhein-Main-Gebiet.</p>
+      <div class="hero-actions">
+        <a href="tel:+4917655667788" class="btn btn-primary">Jetzt anrufen</a>
+        <a href="anfrage.html" class="btn btn-ghost-light">Online anfragen</a>
+      </div>
+    </div>
+
+    <div class="trailer-card">
+      <div class="trailer-row">
+        <span class="trailer-value">24/7</span>
+        <span class="trailer-label">Rund um die Uhr erreichbar</span>
+      </div>
+      <div class="trailer-row">
+        <span class="trailer-value">365</span>
+        <span class="trailer-label">Tage im Jahr im Einsatz</span>
+      </div>
+      <div class="trailer-row">
+        <span class="trailer-value">100%</span>
+        <span class="trailer-label">Rhein-Main-Gebiet &amp; darüber hinaus</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="pin-track" id="services">
+    <div class="showcase">
+
+      <div class="showcase-list">
+        <p class="section-label">01 — Unsere Leistungen</p>
+
+        <ol class="service-items" id="serviceItems">
+          <li class="service-item is-active" data-index="0">
+            <span class="service-index">01</span>
+            <h3>Flughafentransfer</h3>
+            <p>Pünktlich und diskret zu allen deutschen Flughäfen – bei vorliegender Flugnummer reagieren wir flexibel auf Verspätungen, ganz ohne Mehrkosten.</p>
+          </li>
+          <li class="service-item" data-index="1">
+            <span class="service-index">02</span>
+            <h3>Krankenfahrten</h3>
+            <p>Fahrten zu Arzt, Krankenhaus und Reha-Maßnahmen. Auf Wunsch übernehmen wir den kompletten Schriftverkehr mit Ihrer Krankenkasse.</p>
+          </li>
+          <li class="service-item" data-index="2">
+            <span class="service-index">03</span>
+            <h3>Stationäre Aufenthalte</h3>
+            <p>Hin- und Rückfahrt bei Krankenhausaufenthalten – die Kosten werden von den Krankenkassen ohne vorherige Genehmigung übernommen.</p>
+          </li>
+          <li class="service-item" data-index="3">
+            <span class="service-index">04</span>
+            <h3>Fahrdienst für Menschen mit Behinderung</h3>
+            <p>Unsere Fahrer helfen aufmerksam beim Ein- und Aussteigen. Bitte grünen Berechtigungsausweis und ärztliche Verordnung bereithalten.</p>
+          </li>
+          <li class="service-item" data-index="4">
+            <span class="service-index">05</span>
+            <h3>Kurierfahrten</h3>
+            <p>Schnell, unkompliziert und zuverlässig: persönliche Abholung und Zustellung von Dokumenten, Medikamenten und Waren – rund um die Uhr.</p>
+          </li>
+          <li class="service-item" data-index="5">
+            <span class="service-index">06</span>
+            <h3>Personentransfers</h3>
+            <p>Ob Restaurant, Bahnhof oder der Weg nach Hause nach einem Abend in der Stadt – wir bringen Sie komfortabel und sicher von A nach B.</p>
+          </li>
+        </ol>
+
+        <div class="sticky-cta">
+          <div class="sticky-cta-info">
+            <strong>Festpreis auf Anfrage</strong>
+            <span>Keine versteckten Kosten · 24/7 erreichbar</span>
+          </div>
+          <a href="tel:+4917655667788" class="btn btn-primary">Vorbestellen</a>
+        </div>
+      </div>
+
+      <div class="showcase-media-slot" id="mediaSlot" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="closing" id="contact">
+    <div class="closing-card">
+      <p class="section-label">02 — Kontakt</p>
+      <h2>Bereit für die nächste Fahrt?</h2>
+      <p>Rufen Sie uns an oder senden Sie Ihre Anfrage online – wir sind 24 Stunden am Tag, 365 Tage im Jahr für Sie da.</p>
+      <div class="closing-actions">
+        <a href="tel:+4917655667788" class="btn btn-primary">0176 55 66 77 88</a>
+      </div>
+      <div class="closing-meta">
+        <span>Musterstraße 22 · 65428 Rüsselsheim am Main</span>
+        <span>info@malik-taxi-service.de</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand">Malik<span>Taxi</span></span>
+      <p>Ihr zuverlässiger Taxiservice in Rüsselsheim und im Rhein-Main-Gebiet – 24/7, 365&nbsp;Tage im Jahr.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <a href="tel:+4917655667788">0176 55 66 77 88</a>
+      <a href="mailto:info@malik-taxi-service.de">info@malik-taxi-service.de</a>
+      <span>Musterstraße 22, 65428 Rüsselsheim am Main</span>
+    </div>
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <a href="index.html#services">Leistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="anfrage.html">Online-Anfrage</a>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Taxi Malik. Alle Rechte vorbehalten.</span>
+  </div>
+</footer>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
